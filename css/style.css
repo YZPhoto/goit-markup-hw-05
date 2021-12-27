@@ -117,6 +117,7 @@ list-style: none;
 .nav-links .navlink:hover,
 .nav-links .navlink:focus {
   color: var(--brand-color);
+  transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -145,16 +146,19 @@ align-items: center;
 .contact:focus,
 .contact:hover{
     color: var(--brand-color);
-       }
+    transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-icon:focus,
 .contact-icon:hover {
     fill: var(--brand-color);
-    }
+    transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 
 
 /* Банер */
@@ -206,6 +210,8 @@ align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 button {
   border-radius: 4px;
@@ -371,10 +377,12 @@ padding-bottom: 30px;
     color: #757575;
     
 }
+
 .social-list {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+
 }
 
 .social-link {
@@ -383,6 +391,8 @@ padding-bottom: 30px;
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list .social-item:not(:last-child) {
@@ -390,17 +400,20 @@ padding-bottom: 30px;
 }
 .social-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: #fff;
+ 
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--brand-color);
   border-radius: 50%;
+  transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Постоянные клиенты*/
@@ -430,54 +443,63 @@ padding-bottom: 30px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: #afb1b8;
+ 
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--brand-color);
+  transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--brand-color));
+  border: 1px solid var(--brand-color);
+  transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*Футер*/
 .section-footer{
-    text-decoration: none;
+ 
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 
 }
+
+.main {
+  align-items: baseline;
+}
+
+.address-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .logo-white{
    color: #fff ;
     
 }
-.text-address{
-    font-size: 14px;
-    line-height: 1.71;
-    color: #fff;
-    text-decoration: none;
-    font-style: normal;
-    margin-top: 20px;
-    margin-bottom: 9px;
+.footer-adress {
+  margin-top: 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
 }
-.contact-footer{
-font-weight: 400px;
-font-size: 14px;
-font-style: normal;
-line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
-letter-spacing: 3%;
-margin-top: 9px;
-}
-.mail , .tel{
+.footer-contacts {
   margin-top: 9px;
+  color: #afb1b8;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
 }
+
 .footer-thumb {
   display: flex;
   flex-wrap: wrap;
@@ -489,27 +511,21 @@ margin-top: 9px;
 .title-light {
   margin-bottom: 20px;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  font-style: normal;
+  
+ 
 }
 .footer-soc-list {
   display: flex;
   align-items: center;
-}
-.social-list {
-  display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
+
 
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+ 
 }
 
 .social-icon.secondary {
@@ -519,6 +535,7 @@ margin-top: 9px;
 .social-link.secondary {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link.secondary:hover,
@@ -637,6 +654,7 @@ button:focus,
 button:hover{
 color: #fff;
 background-color: var(--brand-color);
+ transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-box{
   display: flex;
@@ -669,6 +687,7 @@ background-color: var(--brand-color);
 
 .project-link:hover .text-overlay {
   transform: translateY(-100%);
+  transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link {
@@ -702,8 +721,10 @@ background-color: var(--brand-color);
 .flex-element:hover,
 .flex-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .content-project {
   padding-top: 20px;
   padding-right: 24px;
