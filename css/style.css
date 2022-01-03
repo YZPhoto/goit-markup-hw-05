@@ -92,8 +92,6 @@ list-style: none;
   color: #212121;
   letter-spacing: 0.02em;
   text-decoration: none;
-  
- 
 }
 
 .nav-links .navlink.slider {
@@ -112,9 +110,11 @@ list-style: none;
   background: var(--brand-color);
   border-radius: 2px;
   bottom: -1px;
-   transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
-
+.navlink{
+  transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .nav-links .navlink:hover,
 .nav-links .navlink:focus {
@@ -392,11 +392,12 @@ padding-bottom: 30px;
   align-items: center;
   width: 44px;
   height: 44px;
+}
+.social-link.profile{
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
-}
+ }
  
 .social-list .social-item:not(:last-child) {
   margin-right: 10px;
